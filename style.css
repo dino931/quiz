@@ -1,0 +1,283 @@
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    
+}
+
+/* navigation bar laingment and edit */
+.nav-parent{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     border-bottom: 5px solid greenyellow;
+}
+
+li{
+    
+    display: inline;
+    margin: 40px;
+}
+
+a{
+    font-weight: 900;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    color: aqua;
+}
+
+/* atribute styling */
+#start-quiz{
+    color: greenyellow;
+    animation: blink 0.6s infinite;
+}
+
+/* start quiz animation */
+@keyframes blink{
+    0%{
+     color: greenyellow;
+    }
+    100%{
+      color: green;
+    }
+}
+
+#start-quiz:hover{
+    color: rgb(143, 236, 143);
+    animation: none;
+}
+
+#rules:hover{
+    color: red;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+}
+
+#rules{
+text-shadow: 1px 1px 1px red;
+}
+
+/* footer content*/
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   
+}
+.nex{
+    display: flex;
+    justify-content: center;
+}
+
+.contant{
+    color: aliceblue;
+}
+
+/* all the  content  */
+ .main-contant{
+    background-color:greenyellow;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(test1.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.styleing{
+    background-color: rgb(0,0,0,0.7);
+    color: aliceblue;
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+    height: 250px;
+}
+
+.styleing h1{
+    animation: heading 1s linear infinite;
+}
+
+@keyframes heading{
+    0%{
+       color: palevioletred;
+    }
+    30%{
+        color: pink;
+    }
+    
+    70%{
+        color: rgb(123, 123, 248);
+    }
+}
+
+
+
+
+/* about */
+
+.about{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wavy-circle {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    width: 500px;
+    border-bottom: 5px solid greenyellow;
+    border-top: 5px solid greenyellow;
+    border-radius: 10px 50px ;
+
+}
+
+
+/* rules  */
+.rules{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: start;
+}
+.an{
+background-color: black;
+color: aliceblue;
+height: 360px;
+width: 500px;
+border-bottom: 5px solid greenyellow;
+border-top: 5px solid greenyellow;
+border-radius: 50px 10px ;
+}
+
+span{
+    color: greenyellow;
+}
+
+
+/* start */
+
+.start{
+    background-image: url(brain.jpg);
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.st{
+    background-color: rgb(0, 0, 0,0.6);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+button{
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+button a{
+    color: rgb(255, 255, 255);
+    
+
+}
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  border: 3px solid rgb(0, 0, 0);
+  
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+button a:hover{
+    color: black;
+}
+.st h2{
+    margin-top: 100px;
+}
+/* Mobile */
+@media (max-width:768px){
+
+    .nav-parent{
+        height:auto;
+        padding:20px ;
+    }
+
+    ul{
+        flex-direction:column;
+        gap:10px;
+    }
+         
+    li{
+        margin:0;
+    }
+
+    .main-content{
+        margin-top:120px;
+        background-size:cover;
+        background-position: center;
+    }
+
+    a{
+        font-size:14px;
+        margin: 20px;
+        transform: 1s;
+    }
+
+    .styleing{
+        width: 350px;
+        height: 280px;
+    }
+
+    .wavy-circle{
+        width: 350px;
+
+    }
+
+    .an{
+        width: 430px;
+        height: auto;
+    }
+
+    .start{
+        background-size: auto;
+    }
+}

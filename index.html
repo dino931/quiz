@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <div class="nav-parent">
+        <ul>
+            <li><a href="#" onclick="active('home')">Home</a></li>
+            <li><a href="#" onclick="active('about')">About</a></li>
+            <li><a href="#" id="rules" onclick="active('rules')">Rules</a></li>
+            <li><a href="#" id="start-quiz" onclick="active('start')">Start Quiz</a></li>
+        </ul>
+    </div>
+
+     
+
+   <div id="content">
+     <div class="main-contant">
+            <div class="styleing">
+                <h1>Welcome to Quiz Master</h1>
+                <p style="color: rgb(249, 133, 133);">
+                    Test Your Knowledge, Challenge Your Mind!
+                </p>
+                <br>
+                <p>
+                    Welcome to Quiz Master, the ultimate destination for fun and educational quizzes.
+                </p>
+            </div>
+        </div>`;
+</div>
+
+   <!-- footer content -->
+    <footer>
+        <div class="contant">
+            <p>Designed and Developed by Rudra Kushwaha.</p>
+            <div class="nex">
+                <p>© 2026 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       function active(page)
+{
+    let content = document.getElementById("content");
+
+    if(page == "home")
+    {
+        content.innerHTML = `
+        <div class="main-contant">
+            <div class="styleing">
+                <h1>Welcome to Quiz Master</h1>
+                <p style="color: rgb(249, 133, 133);">
+                    Test Your Knowledge, Challenge Your Mind!
+                </p>
+                <br>
+                <p>
+                    Welcome to Quiz Master, the ultimate destination for fun and educational quizzes.
+                </p>
+            </div>
+        </div>`;
+    }
+    else if(page == "about")
+    {
+         content.innerHTML = `
+        <div class="about" >
+            <div class="wavy-circle">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Quiz Master, an interactive online quiz platform created to make learning engaging, enjoyable, and accessible for everyone.
+                    
+                    Our goal is to help users test their knowledge, improve their understanding of different subjects, and learn new things through fun and challenging quizzes. We offer a variety of quiz categories, including Technology, Science, Mathematics, History, Sports, and General Knowledge.
+                    </p>
+                    <h2>Our Mission</h2>
+                    <p>To make education more interactive and enjoyable by combining learning with entertainment.</p>
+                    </div>
+                    </div>
+                    
+                    
+                    </div>`;
+                    }
+                    
+                    else if(page == "rules")
+     {
+        content.innerHTML = `
+        <div class="rules">
+        <div class="an">
+            <br>
+             <h2 style="color: aqua; text-align: center;">Rules:-</h2>
+             <br>
+            <p><span>1.</span> Read each question carefully before selecting an answer.</p>
+            <P><span>2.</span>Once an answer is submitted, it cannot be changed.</P>
+            <p><span>3.</span> Each question has only one correct answer unless stated otherwise. </p>
+            <p><span>4.</span> Do not refresh or close the browser during the quiz.</p>
+            <p><span>5.</span> Each question may have a time limit depending on the quiz type.</p>
+            <p><span>6.</span> No unfair means or external assistance should be used.</p>
+            <p><span>7.</span> Points are awarded only for correct answers.</p>
+            <p><span>8.</span> No negative marking unless specifically mentioned.</p>
+            <p><span>9.</span> The final score will be displayed after completing the quiz.</p>
+            <p><span>10.</span> Respect fair play and enjoy the learning experience.</p>
+            </div>
+            
+            </div>`;
+            }
+            
+               else if(page == "start")
+                {
+                        content.innerHTML = `
+                <div class="start">
+        <div class="st">
+            <h2 style="color: red;">Ready to Start?</h2>
+            <p>Think you're prepared for the challenge? Test your knowledge, answer exciting questions, and see how well you score. Click the button below to begin your quiz journey.</p>
+            <br>
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPHPwLpHJh_IMs72_8VYIAy-njs5ZDIHeNwPYPTgV0DI-niQ/viewform?usp=dialog">start Quiz</a></button>
+        </div>
+     </div> 
+                         `;
+                     }
+            }
+
+    </script>
+</body>
+</html>
