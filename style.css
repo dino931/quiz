@@ -187,6 +187,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .st{
@@ -278,6 +280,8 @@ button a:hover{
     }
 
     .start{
-        background-size: auto;
-    }
+        background-size: cover;
+        background-repeat: no-repeat;
+        
 }
+    }
